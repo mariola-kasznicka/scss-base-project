@@ -1,0 +1,106 @@
+@font-face {
+    font-family: 'icomoon';
+    src:  url('../../fonts/icomoon.eot?q4pun8');
+    src:  url('../../fonts/icomoon.eot?q4pun8#iefix') format('embedded-opentype'),
+    url('../../fonts/icomoon.ttf?q4pun8') format('truetype'),
+    url('../../fonts/icomoon.woff?q4pun8') format('woff'),
+    url('../../fonts/icomoon.svg?q4pun8#icomoon') format('svg');
+    font-weight: normal;
+    font-style: normal;
+}
+
+[class^="icon-"], [class*=" icon-"] {
+    /* use !important to prevent issues with browser extensions that change fonts */
+    font-family: 'icomoon' !important;
+    speak: none;
+    font-style: normal;
+    font-weight: normal;
+    font-variant: normal;
+    text-transform: none;
+    line-height: 1;
+
+    /* Better Font Rendering =========== */
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+}
+
+
+.icon-form:before {
+    content: "\e923";
+}
+.icon-close:before {
+    content: "\e91e";
+}
+.icon-cv:before {
+    content: "\e917";
+}
+.icon-star-full:before {
+    content: "\e91d";
+}
+.icon-linkedin:before {
+    content: "\e920";
+}
+.icon-twitter:before {
+    content: "\e921";
+}
+.icon-facebook:before {
+    content: "\e922";
+}
+.icon-arrow-left:before {
+    content: "\e90f";
+}
+.icon-arrow-right:before {
+    content: "\e910";
+}
+.icon-arrow-down:before {
+    content: "\e911";
+}
+.icon-arrow-up:before {
+    content: "\e912";
+}
+.icon-zoom:before {
+    content: "\e925";
+}
+.icon-angle-right:before {
+    content: "\e913";
+}
+.icon-angle-left:before {
+    content: "\e914";
+}
+.icon-angle-down:before {
+    content: "\e915";
+}
+.icon-angle-up:before {
+    content: "\e916";
+}
+.icon-question:before {
+    content: "\e918";
+}
+.icon-check:before {
+    content: "\e919";
+}
+.icon-menu:before {
+    content: "\e901";
+}
+.icon-pin:before {
+    content: "\e903";
+}
+.icon-setting:before {
+    content: "\e906";
+}
+.icon-pen:before {
+    content: "\e907";
+}
+.icon-list:before {
+    content: "\e90b";
+}
+.icon-users:before {
+    content: "\e90c";
+}
+.icon-bag:before {
+    content: "\e90d";
+}
+.icon-home:before {
+    content: "\e90e";
+}
+

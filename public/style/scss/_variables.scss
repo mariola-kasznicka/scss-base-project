@@ -1,0 +1,42 @@
+$page-body-color:           #F1F1F1;
+$page-content-color:        #FFFFFF;
+$page-width:                1100px;
+
+// ============================================================
+// SIZES
+// ============================================================
+$breakPoint__phone--xs:     370px;
+$breakPoint__phone:         740px;
+$breakPoint__tablet:        768px;
+$breakPoint__desktop:       1100px;
+$breakPoint__desktop--xl:   1440px;
+
+// ============================================================
+// COLORS
+// ============================================================
+$color-base:                #333333;
+
+$color-warning:             #F89B2E;
+$color-info:                #2DB53C;
+$color-error:               #DD1515;
+
+// ============================================================
+// FONTS
+// ============================================================
+$base-font:                 'Lato', sans-serif;
+$base-font-size:            14px;
+
+$color-text:                #3D4450;
+$color-text-alt:            #94AAC0;
+$color-link:                #3168E5;
+
+// ============================================================
+// INPUTS
+// ============================================================
+$input-height:              56px;
+$input-font-size:           $base-font-size;
+$input-font-color:          $color-text;
+$input-bg-color:            #FBFBFB;
+$input-border-color:        #EFE8E8;
+$input-arrow-color:         #8C97AA;
+$input-arrow-size:          8px;

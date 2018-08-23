@@ -1,0 +1,115 @@
+.text-center {
+    text-align: center;
+}
+
+.text-left {
+    text-align: left;
+}
+
+.text-right {
+    text-align: right;
+}
+
+// ============================================================
+// FLEX HELPERS
+// ============================================================
+.left-auto {
+    margin-left: auto;
+}
+
+.right-auto {
+    margin-right: auto;
+}
+
+.both-auto {
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.justify-centered {
+    justify-content: center;
+}
+
+// ============================================================
+// FLOATS
+// ============================================================
+.p-left {
+    float: left;
+}
+
+.p-right {
+    float: right;
+}
+
+// ============================================================
+// COLORS
+// ============================================================
+.color-alt {
+    color: $color-text-alt;
+}
+
+.color-info {
+    color: $color-info;
+}
+
+.color-warning {
+    color: $color-warning;
+}
+
+.color-error {
+    color: $color-error;
+}
+
+// ============================================================
+// MINI GRID
+// ============================================================
+.row {
+    @include flex();
+    margin: 0 -10px;
+    align-items: flex-start;
+}
+
+[class^="col-"] {
+    padding-left: 10px;
+    padding-right: 10px;
+}
+
+.col-1 {
+    width: 10%;
+}
+
+.col-2 {
+    width: 20%;
+}
+
+.col-3 {
+    width: 30%;
+}
+
+.col-4 {
+    width: 40%;
+}
+
+.col-5 {
+    width: 50%;
+}
+
+.col-6 {
+    width: 60%;
+}
+
+.col-7 {
+    width: 70%;
+}
+
+.col-8 {
+    width: 80%;
+}
+
+.col-9 {
+    width: 90%;
+}
+
+.col-10 {
+    width: 100%;
+}

@@ -1,0 +1,8 @@
+.container {
+    background: $page-content-color;
+    width: 100%;
+    max-width: $page-width;
+    margin: 50px auto;
+    padding: 30px 50px 70px;
+    @include shadow(0 8px 12px 0 rgba(0, 0, 0, 0.04));
+}

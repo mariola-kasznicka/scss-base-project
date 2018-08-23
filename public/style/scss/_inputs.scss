@@ -1,0 +1,134 @@
+.checkbox,
+.radio {
+    display: inline-block;
+    margin-bottom: 10px;
+    input {
+        position: absolute;
+        overflow: hidden;
+        width: 0;
+        height: 0;
+        opacity: 0;
+    }
+    > span {
+        padding-left: 30px;
+        position: relative;
+        line-height: 20px;
+        cursor: pointer;
+        margin-bottom: 0;
+        vertical-align: top;
+        text-align: left;
+        min-height: 20px;
+        display: inline-block;
+    }
+}
+
+.checkbox {
+    > span {
+        &:before {
+            background-color: #FFF;
+            content: '';
+            width: 20px;
+            height: 20px;
+            border: 1px solid #D9DBE2;
+            border-radius: 1px;
+            position: absolute;
+            top: 0;
+            left: 0;
+            margin-top: 0;
+        }
+        &:after {
+            width: 20px;
+            height: 20px;
+            font-family: 'icomoon';
+            font-size: 12px;
+            line-height: 20px;
+            position: absolute;
+            top: 0;
+            left: 0;
+            color: #FFF;
+            text-align: center;
+        }
+    }
+    input:checked + span {
+        &:after {
+            content: "\e919";
+        }
+        &:before {
+            border: 1px solid $color-base;
+            background-color: $color-base;
+        }
+    }
+}
+
+.radio {
+    > span {
+        &:before {
+            background-color: #FFF;
+            content: '';
+            width: 20px;
+            height: 20px;
+            border: 1px solid #D9DBE2;
+            position: absolute;
+            top: 0;
+            left: 0;
+            margin-top: 0;
+            border-radius: 100%;
+        }
+        &:after {
+            width: 20px;
+            height: 20px;
+            font-family: 'FontAwesome';
+            font-size: 9px;
+            line-height: 20px;
+            position: absolute;
+            top: 0;
+            left: 0;
+            color: $color-text;
+            text-align: center;
+        }
+    }
+    input:checked + span {
+        &:after {
+            content: '\f111';
+        }
+    }
+}
+
+input[type="text"],
+input[type="password"],
+input[type="email"],
+textarea {
+    background-color: $input-bg-color;
+    display: block;
+    width: 100%;
+    border: 1px solid $input-border-color;
+    font-size: $input-font-size;
+    color: $input-font-color;
+    margin-bottom: 10px;
+    box-shadow: none;
+    border-radius: 0;
+    -webkit-appearance: none;
+    @include placeholder($input-font-color);
+    &[disabled],
+    &[readonly] {
+        cursor: not-allowed;
+        opacity: 0.5;
+    }
+    &.has-error {
+        border: 1px solid $color-error;
+    }
+}
+
+input[type="text"],
+input[type="password"],
+input[type="email"] {
+    height: $input-height;
+    padding: 0 30px;
+}
+
+textarea {
+    height: 180px;
+    resize: none;
+    line-height: 18px;
+    padding: 13px 20px 0;
+}

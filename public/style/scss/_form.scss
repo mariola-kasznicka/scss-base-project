@@ -1,0 +1,38 @@
+.form {
+    margin-bottom: 30px;
+    .form__title {
+        border-bottom: 1px solid $input-border-color;
+        padding: 20px 10px;
+        @include flex();
+        p {
+            font-weight: 600;
+            color: $color-base;
+        }
+    }
+    .form__content {
+        padding: 20px 10px 30px;
+    }
+    .form__item {
+        margin-bottom: 20px;
+        margin-left: -10px;
+        margin-right: -10px;
+        @include flex();
+    }
+    .form__label {
+        display: block;
+        margin-bottom: 10px;
+        > strong {
+            color: $color-error;
+        }
+    }
+    .form__error,
+    .form__info {
+        @extend %hide-empty;
+    }
+    .form__error {
+        color: $color-error;
+    }
+    .form__info {
+        color: $color-info;
+    }
+}

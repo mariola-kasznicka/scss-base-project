@@ -1,0 +1,46 @@
+.btn {
+    min-width: 170px;
+    font: $base-font;
+    font-size: 12px;
+    font-weight: 600;
+    color: #FFF;
+    line-height: 34px;
+    text-align: center;
+    border-radius: 2px;
+    padding: 5px 20px;
+    display: inline-block;
+    cursor: pointer;
+    @include shadow(1px 3px 5px 1px rgba(0, 0, 0, 0.07));
+    & + .btn {
+        margin-left: 20px;
+    }
+    &.btn--xs {
+
+    }
+    &.btn--md {
+
+    }
+    &.btn--lg {
+
+    }
+    &.btn--xl {
+
+    }
+    &.btn--red {
+        @include gradient(#DB1313, #F83C3C);
+    }
+    &.btn--green {
+        @include gradient(#19A651, #42D760);
+    }
+    &.btn--base {
+        @include gradient(#1A335C, #21437C);
+    }
+    &.btn--blue {
+        @include gradient(#0058C5, #006EC5);
+    }
+    @include respond-to(desktop) {
+        &:hover, &:focus, &:active {
+            opacity: 0.8;
+        }
+    }
+}
